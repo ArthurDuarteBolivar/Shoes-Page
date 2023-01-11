@@ -1,0 +1,25 @@
+<main>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <section class="content">
+    <div class="title">
+      <h1>Choose Your<br> Favorite <span>Sneaker</span></h1>
+      <p>Sneaker collection with premium quality. minimalist and limited edition</p>
+    </div>
+    <div class="slider">
+      <img [src]="src" alt="shoes">
+      <div>
+        <input class="radio-buttons" type="radio" name="product" value="1" checked (click)="radio1()">
+        <input class="radio-buttons" type="radio" name="product" value="2" (click)="radio2()">
+        <input class="radio-buttons" type="radio" name="product" value="3" (click)="radio3()">
+      </div>
+    </div>
+    <div class="button-arrow">
+      <button [routerLink]="['home']" class="cssbuttons-io-button"> View Store
+        <div class="icon">
+          <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+        </div>
+      </button>
+    </div>
+  </section>
+</main>

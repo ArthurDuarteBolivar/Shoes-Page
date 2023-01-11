@@ -1,0 +1,60 @@
+<main>
+  <div class="nav-bar">
+    <img (click)="ComeBack()" src="/assets/imgs/arrow-right.svg" alt="arrow-back">
+    <img src="/assets/imgs/shopping-cart.svg" alt="cart">
+  </div>
+  <img src="/assets/imgs/shoes-cart.svg" alt="shoes">
+  <div class="description-product">
+    <span>Men Sneaker</span>
+    <h1>Colorful Sports Boot Sneaker</h1>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Size</h2>
+          </mat-panel-title>
+          <mat-panel-description>
+            {{numberOfSize}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-chip-listbox aria-label="Fish selection">
+          <mat-chip-option selected  #size (click)="expansion(size.value)">3.5</mat-chip-option>
+          <mat-chip-option #size11 (click)="expansion(size11.value)">4.5</mat-chip-option>
+          <mat-chip-option #size1 (click)="expansion(size1.value)">4</mat-chip-option>
+          <mat-chip-option #size2 (click)="expansion(size2.value)">5</mat-chip-option>
+          <mat-chip-option #size3 (click)="expansion(size3.value)">5.5</mat-chip-option>
+          <mat-chip-option #size4 (click)="expansion(size4.value)">6</mat-chip-option>
+          <mat-chip-option #size5 (click)="expansion(size5.value)">7</mat-chip-option>
+          <mat-chip-option #size6 (click)="expansion(size6.value)">6.5</mat-chip-option>
+          <mat-chip-option #size7 (click)="expansion(size7.value)">7.5</mat-chip-option>
+          <mat-chip-option #size8 (click)="expansion(size8.value)">8</mat-chip-option>
+          <mat-chip-option #size9 (click)="expansion(size9.value)">8.5</mat-chip-option>
+          <mat-chip-option #size10 (click)="expansion(size10.value)" >9</mat-chip-option>
+        </mat-chip-listbox>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Description</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Featuring crisp leather on the upper, a thick padded collar and rugged tread, it helps you style for the
+          season.
+          The webbing pull tab and round laces add details ready for the outdoors.</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Material</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Usually it is a mix of leather and synthetic mesh for the uppers. Some uppers can be a blend of canvas and leather. Almost always the sole of the shoe will be made from rubber. This allows the shoe to give optimum performance as Basketball involves heavy impact and fast cuts and turns. </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <div class="price">
+    <h1>Price: </h1>
+    <h1>$180.80</h1>
+    <button><img src="/assets/imgs/shopping-cart.svg" alt="card">Add To Card</button>
+  </div>
+</main>
